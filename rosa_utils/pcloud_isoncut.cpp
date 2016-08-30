@@ -1,8 +1,22 @@
+///
+//MSVC++ 14.0 _MSC_VER == 1900 (Visual Studio 2015)
+//MSVC++ 12.0 _MSC_VER == 1800 (Visual Studio 2013)
+//MSVC++ 11.0 _MSC_VER == 1700 (Visual Studio 2012)
+//MSVC++ 10.0 _MSC_VER == 1600 (Visual Studio 2010)
+//MSVC++ 9.0  _MSC_VER == 1500 (Visual Studio 2008)
+//
 #include <assert.h>
-#include "vector.h"
+#if(_MSC_VER == 1800)
+#include <vector>
+#else
+#include "vector.h"	
+#endif
 #include <iostream>
 #include <math.h>
 #include "mex.h"
+#if(_MSC_VER == 1800)
+using namespace std;
+#endif
 /// data wrapper for a Nx3 set of points
 class DataWrapper{
 	private: 
