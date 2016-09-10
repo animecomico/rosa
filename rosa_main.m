@@ -1,7 +1,7 @@
 
 %% which file we should run on
 clc, clear, close all;
-filename = 'fertility_2n';
+filename = 'sample_1';
 % rand('twister',10);
 
 %% EXTRACT NEIGHBORHOOD
