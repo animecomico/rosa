@@ -6,17 +6,11 @@
 //MSVC++ 9.0  _MSC_VER == 1500 (Visual Studio 2008)
 //
 #include <assert.h>
-#if(_MSC_VER == 1800)
 #include <vector>
-#else
-#include "vector.h"	
-#endif
 #include <iostream>
 #include <math.h>
 #include "mex.h"
-#if(_MSC_VER == 1800)
 using namespace std;
-#endif
 /// data wrapper for a Nx3 set of points
 class DataWrapper{
 	private: 
